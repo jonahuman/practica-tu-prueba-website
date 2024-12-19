@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//ES">
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <title>Examen Municipal Licencia Clase None | Practica Tu Prueba</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .question { margin-bottom: 20px; }
+        .question img { max-width: 100%; height: auto; }
+        .options { list-style-type: none; padding: 0; }
+        .options li { margin-bottom: 10px; }
+        #timer { font-size: 20px; font-weight: bold; }
+        .results-popup { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; border: 1px solid #000; }
+        .results-popup h2 { margin-top: 0; }
+    </style>
+</head>
+<body>
+    <h1>Test de Conducción Clase B</h1>
+    <div id="timer">Tiempo restante: <span id="time">35:00</span></div>
+    <form id="testForm">
+        <div class="question">
+            <p><strong>1. ¿Por qué no es bueno desenganchar el motor del vehículo al ir circulando?</strong></p>
+            <ul class="options">
+                <li><label><input type="radio" name="q1" value="a"> Porque ello hace que el vehículo resbale.</label></li>
+                <li><label><input type="radio" name="q1" value="b"> Porque el motor se detendrá.</label></li>
+                <li><label><input type="radio" name="q1" value="c"> Porque no hay frenado del motor.</label></li>
+                <li><label><input type="radio" name="q1" value="d"> Porque el motor funcionará más rápido.</label></li>
+            </ul>
+        </div>
+        <div class="question">
+            <p><strong>2. ¿Qué indica la siguiente señal?</strong></p>
+            <img src="https://example.com/path/to/image.jpg" alt="Señal de tráfico">
+            <ul class="options">
+                <li><label><input type="radio" name="q2" value="a"> Cruce de peatones.</label></li>
+                <li><label><input type="radio" name="q2" value="b"> Prohibido el paso.</label></li>
+                <li><label><input type="radio" name="q2" value="c"> Ceda el paso.</label></li>
+                <li><label><input type="radio" name="q2" value="d"> Zona escolar.</label></li>
+            </ul>
+        </div>
+        <!-- Añadir más preguntas siguiendo el mismo formato hasta completar 35 preguntas -->
+        <button type="button" onclick="showResults()">Ver Resultados</button>
+        <button type="button" onclick="resetTest()">Reiniciar</button>
+    </form>
+    <div id="resultsPopup" class="results-popup">
+        <h2>Resultados del Test</h2>
+        <p id="score"></p>
+        <button type="button" onclick="closePopup()">Cerrar</button>
+    </div>
+    <script>
+        function startTimer(duration, display) {
+            let timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+                display.textContent = minutes + ":" + seconds;
+                if (--timer < 0) {
+                    clearInterval(this);
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            let time = 60 * 35,
+                display = document.querySelector('#time');
+            startTimer(time, display);
+        };
+
+        function showResults() {
+            let score = calculateScore();
+            document.getElementById('score').innerText = 'Tu puntaje es: ' + score;
+            document.getElementById('resultsPopup').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('resultsPopup').style.display = 'none';
+        }
+
+        function resetTest() {
+            document.getElementById('testForm').reset();
+            document.getElementById('resultsPopup').style.display = 'none';
+            window.location.reload(); // Para reiniciar el temporizador
+        }
+
+        function calculateScore() {
+            let correctAnswers = {
+                q1: 'c',
+                q2: 'a',
+                // Añadir todas las respuestas correctas aquí
+            };
+
+            let form = document.getElementById('testForm');
+            let score = 0;
+
+            for (let [question, answer] of Object.entries(correctAnswers)) {
+                let selected = form.querySelector(`input[name="${question}"]:checked`);
+                if (selected && selected.value === answer) {
+                    score++;
+                }
+            }
+
+            return score;
+        }
+    </script>
+</body>
+</html>

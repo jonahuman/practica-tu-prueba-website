@@ -1,0 +1,518 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//ES">
+<html lang="es-CL">
+<head> 
+    <meta charset="utf-8">
+    <title>Examen Municipal Licencia Clase C | Practica Tu Prueba</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="img/favicon.ico" rel="icon">
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Iconos y Bibliotecas CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <!-- Hoja de estilo Bootstrap personalizada -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Hoja de estilo personalizada -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+          background-color: #F2F2F2;
+          font-family: 'Barlow', sans-serif;
+          color: #ffffff;
+          text-align: center;
+        }
+        .container {
+          margin-top: 20px;
+        }
+        .question-box {
+          background-color: #ffffff;
+          color: #000000;
+          padding: 20px;
+          margin-bottom: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .question-box h5 {
+          margin-bottom: 15px;
+        }
+        .question-box label {
+          display: block;
+          margin-bottom: 10px;
+          cursor: pointer;
+        }
+        button {
+          background-color: #ffffff;
+          color: #000000;
+          border: none;
+          padding: 10px 20px;
+          margin: 10px;
+          font-size: 16px;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+        button:hover {
+          background-color: #dddddd;
+        }
+        #temporizador {
+          background-color: #F2F2F2; 
+          color: #000000; 
+          font-size: 20px; 
+          padding: 10px; 
+          border-radius: 5px; 
+          font-family: 'Barlow', sans-serif;
+          margin-top: 20px; 
+          text-align: center; 
+        }
+        table {
+          width: 100%;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 10px;
+          border: 1px solid #ffffff;
+        }
+        th {
+          background-color: #D81324;
+          color: #ffffff;
+        }
+        .incorrecto {
+          background-color: #D81324;
+        }
+        .correcto {
+          background-color: #5ce75c;
+        }
+        .reprobado {
+          background-color: #D81324;
+          color: #ffffff;
+          padding: 10px;
+          border-radius: 5px;
+          margin: 10px 0;
+        }
+        .aprobado {
+          background-color: #66ff66;
+          color: #F2F2F2;
+          padding: 10px;
+          border-radius: 5px;
+          margin: 10px 0;
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Examen Municipal Licencia Clase C - 2024</h1>
+        <div id="temporizador">Tiempo restante: 45:00</div>
+        <form id="examen-form">
+            <!-- Inicio de las preguntas del test clase C -->
+            <div class="question-box" data-correcta="a">
+                <h5>1. ¿Por qué es importante usar zapatos apropiados cuando conduce?</h5>
+                <img src="img/question1-c.jpg" alt="Zapatos" style="width:360px;height:auto;margin-bottom:10px;">
+                <label><input type="radio" name="pregunta1" value="a"> A) Para tener un adecuado control de los pedales.</label>
+                <label><input type="radio" name="pregunta1" value="b"> B) Para evitar el desgaste acelerado de las gomas de los pedales.</label>
+                <label><input type="radio" name="pregunta1" value="c"> C) Para poder efectuar los cambios de marcha más rápidamente.</label>
+                <label><input type="radio" name="pregunta1" value="d"> D) Para poder caminar sin problemas en el caso que necesite solicitar ayuda.</label>
+            </div>
+            <!-- Pregunta sobre estacionamiento de emergencia -->
+            <div class="question-box pregunta" data-correcta="c">
+              <h5>2. Ante una emergencia, un conductor requiere estacionar de noche en una carretera sin alumbrado y con buenas bermas, ¿Cuál de las siguientes medidas debe realizar el conductor?</h5> 
+              <img src="img/question2-c.jpg" alt="Moto" style="width:360px;height:auto;margin-bottom:10px;">
+              <label><input type="radio" name="pregunta1" value="a"> A) Estacionar al costado izquierdo enfrentando la circulación.</label>
+              <label><input type="radio" name="pregunta1" value="b"> B) Ocupar el menor espacio posible de la berm.</label>
+              <label><input type="radio" name="pregunta1" value="c"> C) Mantener encendidas sus luces de estacionamiento.</label>
+              <label><input type="radio" name="pregunta1" value="d"> D) Utilizar señales de emergencia para alertar a otros conductores.</label>
+            </div>
+            <!-- Pregunta sobre el freno principal en la motocicleta -->
+            <div class="question-box pregunta" data-correcta="a">
+              <h5>3. El freno principal en la motocicleta es el:</h5>
+              <img src="img/question3-c.jpg" alt="Freno" style="width:360px;height:auto;margin-bottom:10px;">
+              <label><input type="radio" name="pregunta3" value="a"> A) Delantero</label>
+              <label><input type="radio" name="pregunta3" value="b"> B) Trasero</label>
+              <label><input type="radio" name="pregunta3" value="c"> C) Freno de estacionamiento</label>
+            </div>
+            <!--Pregunta sobre el adelanto en carretera-->
+            <div class="question-box pregunta" data-correcta="c">
+              <h5>4. Cuando sea adelantado usted deberá:  </h5>
+              <img src="img/question4-c.jpg" alt="Adelanto" style="width:360px;height:auto;margin-bottom:10px;">
+              <label><input type="radio" name="pregunta4" value="a"> A) Facilite el adelantamiento manteniéndose lo más a la derecha posible. </label>
+              <label><input type="radio" name="pregunta4" value="b"> B) No aumentar la velocidad. </label>
+              <label><input type="radio" name="pregunta4" value="c"> C) Todos los mencionados. </label>
+              <label><input type="radio" name="pregunta4" value="d"> D) En caso de peligro haga todo lo que pueda para ayudar a quien lo adelante. </label>
+            </div>
+            <!--Pregunta sobre distancia de detención entre vehículos-->
+            <div class="question-box pregunta" data-correcta="d">
+              <h5>5. La distancia de detención total es igual a la suma de la distancia de reacción y la de frenado. Aproximadamente, ¿Cuál es la mínima distancia de detención total en un asfalto seco, si usted viaja a 90km/h? </h5>
+              <img src="img/question5-c.jpg" alt="Distancia" style="width:360px;height:auto;margin-bottom:10px;">
+              <label><input type="radio" name="pregunta5" value="a"> A) Unos 30 metros </label>
+              <label><input type="radio" name="pregunta5" value="b"> B) Unos 120 metros </label>
+              <label><input type="radio" name="pregunta5" value="c"> C) Unos 50 metros </label>
+              <label><input type="radio" name="pregunta5" value="d"> D) Unos 70 metros </label>
+            </div>
+            <!--Pregunta sobre lugares de prohibición de estacionarse-->
+            <div class="question-box pregunta" data-correcta="d">
+              <h5>6. Entre otras normas, en que lugares está prohibido estacionarse y detenerse: </h5>
+              <img src="img/question6-c.jpg" alt="Estacionarse" style="width:360px;height:auto;margin-bottom:10px;">
+              <label><input type="radio" name="pregunta6" value="a"> A) En las calzadas o bermas de caminos públicos de 2 o más pistas de circulación en un mismo sentido </label>
+              <label><input type="radio" name="pregunta6" value="b"> B) Dentro de un cruce  </label>
+              <label><input type="radio" name="pregunta6" value="c"> C) Al costado o al lado opuesto de cualquier obstrucción de tránsito, excavación o trabajos en la calzada </label>
+              <label><input type="radio" name="pregunta6" value="d"> D) Todas las mencionadas </label>
+            </div>
+            <!--Pregunta sobre peso de cuerpo en motocicleta-->
+            <div class="question-box pregunta" data-correcta="d">
+              <h5>7. El peso del cuerpo en la motocicleta, ¿debe descansar en los...?</h5>
+                <img src="img/question7-c.jpg" alt="Cuerpo" style="width:360px;height:auto;margin-bottom:10px;">
+                <label><input type="radio" name="pregunta7" value="a"> A) Entrepierna </label>
+                <label><input type="radio" name="pregunta7" value="b"> B) Glúteos </label>
+                <label><input type="radio" name="pregunta7" value="c"> C) Rodillas </label>
+                <label><input type="radio" name="pregunta7" value="d"> D) Todas las anteriores </label>
+            </div>
+            <!--Pregunta sobre el motor del vehículo-->
+            <div class="question-box pregunta" data-correcta="b">
+              <h5>8. Podemos saber la cantidad de revoluciones del motor por: </h5>
+                <img src="img/question8-c.jpg" alt="Motor" style="width:360px;height:auto;margin-bottom:10px;">
+                <label><input type="radio" name="pregunta8" value="a"> A) El sonido al conducir </label>
+                <label><input type="radio" name="pregunta8" value="b"> B) El Tacometro </label>
+                <label><input type="radio" name="pregunta8" value="c"> C) El Odometro. </label>
+                <label><input type="radio" name="pregunta8" value="d"> D) El velocimetro </label>
+            </div>
+            <!--Pregunta sobre quien otorga las licencias-->
+            <div class="question-box pregunta" data-correcta="c">
+              <h5>9. ¿Quién otorga las licencias de conducir? </h5>
+                <img src="img/question9-c.jpg" alt="Licencia" style="width:360px;height:auto;margin-bottom:10;">
+                <label><input type="radio" name="pregunta9" value="a"> A) Carabineros </label>
+                <label><input type="radio" name="pregunta9" value="b"> B) La municipalidad </label>
+                <label><input type="radio" name="pregunta9" value="c"> C) Departamento de transito de la municipalidad </label>
+                <label><input type="radio" name="pregunta9" value="d"> D) Escuela de conductores </label> 
+            </div>
+            <!--Pregunta sobre funcionamientos-->
+            <div class="question-box pregunta" data-correcta="c">
+              <h5> 10. Un mal funcionamiento del sistema de suspención, ¿en qué puede afectar? </h5>
+                <img src="img/question10-c.jpg" alt="Suspención" style="width:360px;height:auto;margin-bottom:10;">
+                <label><input type="radio" name="pregunta10" value="a"> A) Puede verse afectado en la potencia del vehículo </label>
+                <label><input type="radio" name="pregunta10" value="b"> B) Puede verse afectado en el frenado del vehículo </label>
+                <label><input type="radio" name="pregunta10" value="c"> C) Puede verse afectado en el control del vehículo </label>
+                <label><input type="radio" name="pregunta10" value="d"> D) Puede verse afectado en el rendimiento del vehículo </label>
+            </div>
+            <!--Pregunta sobre significado de luces-->
+            <div class="question-box pregunta" data-correcta="c">
+              <h5> 11. ¿Qué significa esta luz de advertencia en el panel de instrumentos? </h5>
+                <img src="img/question11-c.jpg" alt="Advertencia" style="width:360px;height:auto;margin-bottom:10;">
+                <label><input type="radio" name="pregunta11" value="a"> A) Freno de mano puesto </label>
+                <label><input type="radio" name="pregunta11" value="b"> B) Luces altas </label>
+                <label><input type="radio" name="pregunta11" value="c"> C) Intermitentes de advertencia de peligro </label>
+                <label><input type="radio" name="pregunta11" value="d"> D)  </label>
+            </div>              
+            <!--Refrigeracion-->
+            <div class="question-box pregunta" data-correcta="d">
+                <h5> 12. ¿Cuáles son los sistemas de refrigeración del motor de una motocicleta? </h5>
+                  <img src="img/question12-c.jpg" alt="Motores" style="width:360px;height:auto;margin-bottom:10;">
+                  <label><input type="radio" name="pregunta12" value="a"> A) Solamente aire </label>
+                  <label><input type="radio" name="pregunta12" value="a"> B) Solamente líquido y aceite </label>
+                  <label><input type="radio" name="pregunta12" value="c"> C) Solamente líquido </label>
+                  <label><input type="radio" name="pregunta12" value="d"> D) Solamente líquido y aire </label>
+            </div>
+            <!-- Pregunta 13 sobre el embrague -->
+            <div class="question-box" data-correcta="b">
+                <h5>13. ¿Cuál es la función principal del embrague en una motocicleta?</h5>
+                  <label><input type="radio" name="pregunta13" value="a"> A) Aumentar la velocidad</label>
+                  <label><input type="radio" name="pregunta13" value="b"> B) Permitir el cambio de marchas</label>
+                  <label><input type="radio" name="pregunta13" value="c"> C) Frenar el vehículo</label>
+                  <label><input type="radio" name="pregunta13" value="d"> D) Controlar la dirección</label>
+            </div>
+
+            <!-- Pregunta 14 sobre el aceite para motocicletas -->
+            <div class="question-box" data-correcta="d">
+              <h5>14. ¿Qué tipo de aceite se recomienda para el motor de una motocicleta?</h5>
+                  <label><input type="radio" name="pregunta14" value="a"> A) Aceite de cocina</label>
+                  <label><input type="radio" name="pregunta14" value="b"> B) Aceite mineral</label>
+                  <label><input type="radio" name="pregunta14" value="c"> C) Aceite sintético</label>
+                  <label><input type="radio" name="pregunta14" value="d"> D) Aceite de motor específico para motocicletas</label>
+            </div>
+
+            <!-- Pregunta 15 sobre curvas -->
+            <div class="question-box" data-correcta="c">
+              <h5>15. ¿Qué debe hacer un motociclista al acercarse a una curva?</h5>
+                  <label><input type="radio" name="pregunta15" value="a"> A) Acelerar</label>
+                  <label><input type="radio" name="pregunta15" value="b"> B) Frenar bruscamente</label>
+                  <label><input type="radio" name="pregunta15" value="c"> C) Inclinarse hacia el interior de la curva</label>
+                  <label><input type="radio" name="pregunta15" value="d"> D) Mantener la posición vertical</label>
+            </div>
+
+            <!-- Pregunta 16 sobre el freno trasero -->
+            <div class="question-box" data-correcta="b">
+              <h5>16. ¿Cuál es la función del freno trasero en una motocicleta?</h5>
+                  <label><input type="radio" name="pregunta16" value="a"> A) Aumentar la velocidad</label>
+                  <label><input type="radio" name="pregunta16" value="b"> B) Proporcionar estabilidad al frenar</label>
+                  <label><input type="radio" name="pregunta16" value="c"> C) Frenar solo la rueda delantera</label>
+                  <label><input type="radio" name="pregunta16" value="d"> D) No tiene función</label>
+            </div>
+
+            <!-- Pregunta 17 sobre equipo de protección -->
+            <div class="question-box" data-correcta="b">
+              <h5>17. ¿Qué equipo de protección es esencial para un motociclista?</h5>
+                  <label><input type="radio" name="pregunta17" value="a"> A) Solo casco</label>
+                  <label><input type="radio" name="pregunta17" value="b"> B) Casco, chaqueta y guantes</label>
+                  <label><input type="radio" name="pregunta17" value="c"> C) Solo chaqueta</label>
+                  <label><input type="radio" name="pregunta17" value="d"> D) Ninguno</label>
+            </div>
+
+            <!-- Pregunta 18 sobre causas de accidentes -->
+            <div class="question-box" data-correcta="d">
+              <h5>18. ¿Cuál es la principal causa de accidentes en motocicletas?</h5>
+                  <label><input type="radio" name="pregunta18" value="a"> A) Condiciones climáticas</label>
+                  <label><input type="radio" name="pregunta18" value="b"> B) Mal estado de la carretera</label>
+                  <label><input type="radio" name="pregunta18" value="c"> C) Falta de visibilidad</label>
+                  <label><input type="radio" name="pregunta18" value="d"> D) No existe causa </label>
+            </div>
+            <!-- Pregunta 19 sobre temperatura del motor -->
+            <div class="question-box" data-correcta="b">
+              <h5>19. ¿Qué significa el indicador de "temperatura del motor" en el panel?</h5>
+                <label><input type="radio" name="pregunta19" value="a"> A) El motor está frío</label>
+                <label><input type="radio" name="pregunta19" value="b"> B) El motor está sobrecalentado</label>
+                <label><input type="radio" name="pregunta19" value="c"> C) El motor está en buen estado</label>
+                <label><input type="radio" name="pregunta19" value="d"> D) No tiene importancia</label>
+            </div>
+
+            <!-- Pregunta 20 sobre posicionamiento de pies -->
+            <div class="question-box" data-correcta="b">
+              <h5>20. ¿Cómo debe un motociclista posicionar sus pies al conducir?</h5>
+                <label><input type="radio" name="pregunta20" value="a"> A) Colocarlos en el suelo</label>
+                <label><input type="radio" name="pregunta20" value="b"> B) Mantenerlos en los estribos</label>
+                <label><input type="radio" name="pregunta20" value="c"> C) Colocarlos sobre el manillar</label>
+                <label><input type="radio" name="pregunta20" value="d"> D) No hay una posición correcta</label>
+            </div>
+
+            <!-- Pregunta 21 sobre preparación antes de un viaje -->
+            <div class="question-box" data-correcta="d">
+              <h5>21. ¿Qué se debe hacer antes de iniciar un viaje en motocicleta?</h5>
+                <label><input type="radio" name="pregunta21" value="a"> A) Revisar el nivel de combustible</label>
+                <label><input type="radio" name="pregunta21" value="b"> B) Comprobar los frenos y luces</label>
+                <label><input type="radio" name="pregunta21" value="c"> C) Ajustar el casco</label>
+                <label><input type="radio" name="pregunta21" value="d"> D) Todas las anteriores</label>
+            </div>
+
+            <!-- Pregunta 22 sobre distancia mínima al seguir -->
+            <div class="question-box" data-correcta="b">
+              <h5>22. ¿Cuál es la distancia mínima que se debe mantener al seguir a otro vehículo?</h5>
+                <label><input type="radio" name="pregunta22" value="a"> A) 1 metro</label>
+                <label><input type="radio" name="pregunta22" value="b"> B) 2 segundos</label>
+                <label><input type="radio" name="pregunta22" value="c"> C) 5 metros</label>
+                <label><input type="radio" name="pregunta22" value="d"> D) 10 segundos</label>
+            </div>
+
+            <!-- Pregunta 23 sobre deslizamiento en la rueda trasera -->
+            <div class="question-box" data-correcta="c">
+              <h5>23. ¿Qué se debe hacer si se siente deslizamiento en la rueda trasera?</h5>
+                <label><input type="radio" name="pregunta23" value="a"> A) Acelerar</label>
+                <label><input type="radio" name="pregunta23" value="b"> B) Frenar bruscamente</label>
+                <label><input type="radio" name="pregunta23" value="c"> C) Soltar el acelerador y mantener la calma</label>
+                <label><input type="radio" name="pregunta23" value="d"> D) Cambiar de dirección</label>
+            </div>
+
+            <!-- Pregunta 24 sobre luces de conducción nocturna -->
+            <div class="question-box" data-correcta="c">
+              <h5>24. ¿Qué tipo de luces se deben usar al conducir de noche?</h5>
+                <label><input type="radio" name="pregunta24" value="a"> A) Luces de posición</label>
+                <label><input type="radio" name="pregunta24" value="b"> B) Luces altas</label>
+                <label><input type="radio" name="pregunta24" value="c"> C) Luces bajas</label>
+                <label><input type="radio" name="pregunta24" value="d"> D) Ninguna de las anteriores</label>
+            </div>
+            <!-- Pregunta 25 sobre intersecciones -->
+            <div class="question-box" data-correcta="b">
+              <h5>25. ¿Qué debe hacer un motociclista al cruzar una intersección?</h5>
+                <label><input type="radio" name="pregunta25" value="a"> A) Acelerar para pasar rápidamente</label>
+                <label><input type="radio" name="pregunta25" value="b"> B) Reducir la velocidad y mirar a ambos lados</label>
+                <label><input type="radio" name="pregunta25" value="c"> C) Ignorar las señales de tránsito</label>
+                <label><input type="radio" name="pregunta25" value="d"> D) No es necesario hacer nada</label>
+            </div>
+
+            <!-- Pregunta 26 sobre sonido irregular del motor -->
+            <div class="question-box" data-correcta="b">
+              <h5>26. ¿Qué indica un sonido irregular del motor?</h5>
+                <label><input type="radio" name="pregunta26" value="a"> A) Que el motor está en buen estado</label>
+                <label><input type="radio" name="pregunta26" value="b"> B) Que debe ser revisado</label>
+                <label><input type="radio" name="pregunta26" value="c"> C) Que no hay problemas</label>
+                <label><input type="radio" name="pregunta26" value="d"> D) Que el motor necesita aceite</label>
+            </div>
+
+            <!-- Pregunta 27 sobre frenar en motocicleta -->
+            <div class="question-box" data-correcta="b">
+              <h5>27. ¿Cuál es la forma correcta de frenar en una motocicleta?</h5>
+                <label><input type="radio" name="pregunta27" value="a"> A) Usar solo el freno delantero</label>
+                <label><input type="radio" name="pregunta27" value="b"> B) Usar ambos frenos de manera equilibrada</label>
+                <label><input type="radio" name="pregunta27" value="c"> C) Usar solo el freno trasero</label>
+                <label><input type="radio" name="pregunta27" value="d"> D) Frenar de golpe</label>
+            </div>
+
+            <!-- Pregunta 28 sobre contramanillar -->
+            <div class="question-box" data-correcta="a">
+              <h5>28. ¿Qué es el "contramanillar"?</h5>
+                <label><input type="radio" name="pregunta28" value="a"> A) Girar el manillar en la dirección opuesta</label>
+                <label><input type="radio" name="pregunta28" value="b"> B) Girar el manillar hacia la dirección deseada</label>
+                <label><input type="radio" name="pregunta28" value="c"> C) Mantener el manillar recto</label>
+                <label><input type="radio" name="pregunta28" value="d"> D) No es necesario</label>
+            </div>
+
+            <!-- Pregunta 29 sobre el mantenimiento de la motocicleta -->
+            <div class="question-box" data-correcta="d">
+              <h5>29. ¿Qué mantenimiento regular es esencial para una motocicleta?</h5>
+                <label><input type="radio" name="pregunta29" value="a"> A) Cambiar el aceite cada 10,000 km</label>
+                <label><input type="radio" name="pregunta29" value="b"> B) Revisar la presión de los neumáticos cada mes</label>
+                <label><input type="radio" name="pregunta29" value="c"> C) Limpiar el filtro de aire cada 5,000 km</label>
+                <label><input type="radio" name="pregunta29" value="d"> D) Todas las anteriores</label>
+            </div>
+
+            <!-- Pregunta 30 sobre el uso del casco -->
+            <div class="question-box" data-correcta="b">
+              <h5>30. ¿Por qué es importante usar un casco al conducir una motocicleta?</h5>
+                <label><input type="radio" name="pregunta30" value="a"> A) Solo por estilo</label>
+                <label><input type="radio" name="pregunta30" value="b"> B) Para proteger la cabeza en caso de accidente</label>
+                <label><input type="radio" name="pregunta30" value="c"> C) No es necesario usarlos </label>
+                <label><input type="radio" name="pregunta30" value="d"> D) Todas las anteriores </label>
+            </div>
+            <!-- Pregunta 31 sobre características de un buen conductor -->
+            <div class="question-box" data-correcta="d">
+              <h5>31. ¿Cuál de las siguientes es una característica de un buen conductor?</h5>
+              <label><input type="radio" name="pregunta31" value="a"> A) Ignorar las señales de tránsito</label>
+              <label><input type="radio" name="pregunta31" value="b"> B) Conducir a alta velocidad</label>
+              <label><input type="radio" name="pregunta31" value="c"> C) Usar el teléfono móvil mientras conduce</label>
+              <label><input type="radio" name="pregunta31" value="d"> D) Mantener la atención y respetar las normas de tráfico</label>
+            </div>
+
+            <!-- Pregunta 32 sobre sueño al conducir -->
+            <div class="question-box" data-correcta="b">
+              <h5>32. ¿Dónde es más probable que aparezca el sueño al conducir, incluso si se ha dormido bien?</h5>
+              <label><input type="radio" name="pregunta32" value="a"> A) En carreteras rectas durante el día</label>
+              <label><input type="radio" name="pregunta32" value="b"> B) En la noche</label>
+              <label><input type="radio" name="pregunta32" value="c"> C) En zonas urbanas</label>
+              <label><input type="radio" name="pregunta32" value="d"> D) En caminos montañosos</label>
+            </div>
+
+            <!-- Pregunta 33 sobre estacionamiento cerca de un cruce ferroviario -->
+            <div class="question-box" data-correcta="c">
+              <h5>33. ¿A cuántos metros de un cruce ferroviario a nivel se puede estacionar?</h5>
+              <label><input type="radio" name="pregunta33" value="a"> A) 5 metros</label>
+              <label><input type="radio" name="pregunta33" value="b"> B) 10 metros</label>
+              <label><input type="radio" name="pregunta33" value="c"> C) 15 metros</label>
+              <label><input type="radio" name="pregunta33" value="d"> D) 20 metros</label>
+            </div>
+
+            <!-- Pregunta 34 sobre cómo estacionar un vehículo -->
+            <div class="question-box" data-correcta="b">
+              <h5>34. Por regla general, ¿cómo debes estacionar tu vehículo?</h5>
+              <label><input type="radio" name="pregunta34" value="a"> A) En cualquier lugar</label>
+              <label><input type="radio" name="pregunta34" value="b"> B) De manera que no obstruya el paso</label>
+              <label><input type="radio" name="pregunta34" value="c"> C) Con las luces apagadas</label>
+              <label><input type="radio" name="pregunta34" value="d"> D) Con las ruedas giradas hacia la acera</label>
+            </div>
+
+            <!-- Pregunta 35 sobre lugares con más probabilidad de hielo en invierno -->
+            <div class="question-box" data-correcta="a">
+              <h5>35. En épocas de invierno, ¿dónde es más previsible que haya hielo en la calzada?</h5>
+              <label><input type="radio" name="pregunta35" value="a"> A) Sobre puentes y en tramos de vía que pasan entre bosques</label>
+              <label><input type="radio" name="pregunta35" value="b"> B) En zonas urbanas</label>
+              <label><input type="radio" name="pregunta35" value="c"> C) En carreteras de montaña</label>
+              <label><input type="radio" name="pregunta35" value="d"> D) En caminos de tierra</label>
+            </div>
+          </div>
+        </div>
+      </div>
+            <!-- Botones para Reiniciar y Ver Resultados -->
+    <button type="button" onclick="location.reload()">Reiniciar</button>
+    <button type="button" onclick="verResultados()">Ver resultados</button>
+  </form>
+  <div id="resultados"></div>
+</div>
+<script>
+
+    function iniciarTemporizador(duracion, display) {
+        let timer = duracion, minutes, seconds;
+        const intervalId = setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+        display.textContent = "Tiempo restante: " + minutes + ":" + seconds;
+        if (--timer < 0) {
+            clearInterval(intervalId);
+            verResultados();
+        }
+        }, 1000);
+    }
+
+    window.onload = function () {
+        let tiempoExamen = 60 * 45; // 45 minutos en segundos
+        let display = document.querySelector('#temporizador');
+        iniciarTemporizador(tiempoExamen, display);
+    };
+
+    function reiniciarFormulario() {
+        document.getElementById("examen-form").reset();
+        document.getElementById("resultados").innerHTML = "";
+    }
+
+    function verResultados() {
+            const preguntas = document.querySelectorAll(".question-box");
+            const totalPreguntas = preguntas.length;
+            let respuestasCorrectas = 0;
+
+            preguntas.forEach((pregunta, index) => {
+                const correcta = pregunta.getAttribute("data-correcta");
+                const respuestaSeleccionada = document.querySelector(`input[name="pregunta${index + 1}"]:checked`);
+                if (respuestaSeleccionada && respuestaSeleccionada.value === correcta) {
+                    respuestasCorrectas++;
+                }
+            });
+
+            const resultadoDiv = document.getElementById("resultados");
+            resultadoDiv.innerHTML = `<h2>Resultado: ${respuestasCorrectas} de ${totalPreguntas}</h2>`;
+            if (respuestasCorrectas / totalPreguntas >= 0.80) {
+                resultadoDiv.innerHTML += '<div class="aprobado">¡Aprobado!</div>';
+            } else {
+                resultadoDiv.innerHTML += '<div class="reprobado">Reprobado. Necesita al menos un 80% para aprobar.</div>';
+            }
+        }
+
+        window.onload = startTimer;
+    </script>
+        <script>
+          $(document).ready(function() {
+            // Obtener preguntas desde el backend (Flask API)
+            $.ajax({
+              url: '/api/get-questions',
+              type: 'GET',
+              success: function(data) {
+                if (data && data.questions) {
+                  data.questions.forEach(function(question, index) {
+                    const questionBox = `
+                      <div class="question-box pregunta" data-correcta="${question.correct_option}">
+                        <h5>${index + 1}. ${question.question_text}</h5>
+                        ${generateOptions(question.options, index)}
+                      </div>
+                    `;
+                    $('#examen-form').append(questionBox);
+                  });
+                }
+              },
+              error: function(error) {
+                alert('Error al obtener las preguntas');
+              }
+            });
+          });
+      
+          function generateOptions(options, index) {
+            return options.map((option, i) => {
+              return `
+                <label>
+                  <input type="radio" name="pregunta${index + 1}" value="${String.fromCharCode(97 + i)}" required>
+                  ${String.fromCharCode(97 + i)}) ${option}
+                </label>
+              `;
+            }).join('');
+          }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,574 @@
+<!DOCTYPE html> <!--index.html-->
+<html lang="es-CL">
+
+<head>
+    <meta name="google-adsense-account" content="ca-pub-2672277404608005">
+    <meta charset="utf-8">
+    <!--meta http-equiv="refresh" content="0; url=login.html"-->
+    <title>Practica Tu Prueba</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+
+    <!-- mi favicon xd -->
+    <link href="img/favicon.ico" rel="icon">
+    
+    <!-- fuentes web de google xd -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet"> 
+
+    <!-- hoja de estilo de fuente de icono xd -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- hoja de estilo de bibliotecas xd -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- hoja de estilo bootstrap personalizada xd -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- hoja de estilo de plantilla xd --> 
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- inicio giratorio xd -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Cargando...</span>
+        </div>
+    </div>
+    <!-- giratorio finalizado xd -->
+
+
+    <!-- inicio del topbar xd -->
+    <div class="container-fluid bg-light p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>Región Metropolitana, Chile</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Lu. a Vie.: 09.00 AM - 09.00 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+56 9 3130 4910</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin del topbar xd -->
+
+    <!-- inicio del navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"><i class="#"></i>Practica Tu Prueba</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                <a href="about.html" class="nav-item nav-link">Nosotros</a>
+                <a href="service.html" class="nav-item nav-link">Rutas</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pruebas</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="test-a1.html" class="dropdown-item">Prueba Clase A1</a>
+                        <a href="test-a2.html" class="dropdown-item">Prueba Clase A2</a>
+                        <a href="test-a3.html" class="dropdown-item">Prueba Clase A3</a> 
+                        <a href="test-b.html" class="dropdown-item">Prueba Clase B</a>
+                        <a href="test-c.html" class="dropdown-item">Prueba Clase C</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contacto</a>
+            </div>
+            <a href="https://mejoresconductores.conaset.cl/#/" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Material Teórico<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- fin del navbar xd -->
+
+
+    <!-- inicio del carrusel xd -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-bg-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center justify-content-lg-start">
+                                <div class="col-10 col-lg-7 text-center text-lg-start">
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// Licencia de Conducir //</h6>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Bienvenido a bordo</h1>
+                                    <a href="test-a1.html" class="btn btn-primary py-3 px-5 animated slideInDown">Practica aquí<i class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
+                                    <img class="img-fluid" src="img/carousel-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-bg-2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center justify-content-lg-start">
+                                <div class="col-10 col-lg-7 text-center text-lg-start">
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// Licencia de conducir //</h6>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Tu plataforma de conducción online</h1>
+                                    <a href="test-a1.html" class="btn btn-primary py-3 px-5 animated slideInDown">Practica aquí<i class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
+                                    <img class="img-fluid" src="img/carousel-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+    <!-- fin del carrusel xd -->
+
+
+    <!-- inicio del servicio xd -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex py-5 px-4">
+                        <i class="fa fa-road fa-3x text-danger flex-shrink-0"></i>
+                        <div class="ps-4">
+                            <h5 class="mb-3">Circuitos Prácticos</h5>
+                            <p>Informate para encontrar el mejor circuito para practicar en tu comuna</p>
+                            <a class="text-secondary border-bottom" href="service.html">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="d-flex bg-light py-5 px-4">
+                        <i class="fa fa-pencil-alt fa-3x text-danger flex-shrink-0"></i>
+                        <div class="ps-x|4">
+                            <h5 class="mb-3">Pruebas teóricas</h5>
+                            <p>Importante que entiendas y no solo memorices las señales de tránsito y la reglamentación.</p>
+                            <a class="text-secondary border-bottom" href="test-a1.html">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="d-flex py-5 px-4">
+                        <i class="fa fa-car fa-3x text-primary flex-shrink-0"></i>
+                        <div class="ps-4">
+                            <h5 class="mb-3">Material Teórico</h5>
+                            <p>Estudia con nuestra plataforma, nuestros resumenes y test gratuitos</p>
+                            <a class="text-secondary border-bottom" href="https://mejoresconductores.conaset.cl/#/">Saber más</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- terminar servicio xd -->
+
+
+    <!-- sobre nosotros xd -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 pt-4" style="min-height: 400px;">
+                    <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/about.jpg" style="object-fit: cover;" alt="">
+                        <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5" style="background: rgba(0, 0, 0, .08);">
+                            <h1 class="display-4 text-white mb-0">15 <span class="fs-4">Años de</span></h1>
+                            <h4 class="text-white">Experiencia</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h6 class="text-primary text-uppercase">// Nosotros //</h6>
+                    <h1 class="mb-4"><span class="text-primary">Practica Tu Prueba</span> Es una plataforma diseñada para aprobar tu exámen teórico de forma calificada.</h1>
+                    <p class="mb-4">Al ser una plataforma digital, está disponible las 24 horas del día, lo que permite a los usuarios estudiar y practicar en cualquier momento y lugar, adaptándose a sus horarios personales. Nuestra plataforma digital está diseñada para ser tu compañera constante en el camino hacia la aprobación del examen teórico de manejo. En Practica Tu Prueba, entendemos que la preparación para el examen teórico de manejo es una etapa crucial en tu camino hacia la independencia y seguridad al volante. Por eso, nos esforzamos en ofrecerte:</p>
+                    <div class="row g-4 mb-3 pb-3">
+                        <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="d-flex">
+                                <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1" style="width: 45px; height: 45px;">
+                                    <span class="fw-bold text-secondary">01</span>
+                                </div>
+                                <div class="ps-3">
+                                    <h6>Mejor calidad en las escuelas de conducción</h6>
+                                    <span> Nuestro equipo de expertos en educación vial te asegura una formación completa y actualizada, garantizando la excelencia en las mejores escuelas de conducción.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="d-flex">
+                                <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1" style="width: 45px; height: 45px;">
+                                    <span class="fw-bold text-secondary">02</span>
+                                </div>
+                                <div class="ps-3">
+                                    <h6>Rutas necesarias y mejoradas para que te prepares en examen práctico</h6>
+                                    <span> Nos comprometemos con la excelencia, proporcionando mapas detallados por comuna en Santiago para que te prepares de manera óptima para tu examen práctico de manejo.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="d-flex">
+                                <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1" style="width: 45px; height: 45px;">
+                                    <span class="fw-bold text-secondary">03</span>
+                                </div>
+                                <div class="ps-3">
+                                    <h6>Realiza simulaciones de pruebas teóricas en línea</h6>
+                                    <span> Practica pruebas en línea con recursos actualizados y realistas, asegurando una preparación efectiva y un alto índice de aprobación.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="d-flex">
+                            <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1" style="width: 45px; height: 45px;">
+                                <span class="fw-bold text-secondary">04</span>
+                            </div>
+                            <div class="ps-3">
+                                <h6>Otros más</h6>
+                                <span> Estamos orgullosos de contar con un equipo reconocido por su dedicación y resultados excepcionales, lo que se refleja en el alto índice de aprobación de nuestros usuarios.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- sobre nosotros xd -->
+
+
+    <!-- fact start xd -->
+    <div class="container-fluid fact bg-dark my-5 py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <i class="fa fa-check fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">15</h2>
+                    <p class="text-white mb-0">Años de experiencia</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                    <i class="fa fa-users-cog fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">20,543</h2>
+                    <p class="text-white mb-0">Exámenes corregidos</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <i class="fa fa-users fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">13,361</h2>
+                    <p class="text-white mb-0">Usuarios registrados ayer</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                    <i class="fa fa-car fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">5,630</h2>
+                    <p class="text-white mb-0">Alumnos egresados</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fact end xd -->
+
+
+    <!-- practica para sacar tu prueba inicio xd -->
+    <div class="container-xxl service py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-primary text-uppercase">// Practica //</h6>
+                <h1 class="mb-5">Para poder sacar tu prueba</h1>
+            </div>
+            <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-4">
+                    <div class="nav w-100 nav-pills me-4">
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                            <i class="fa fa-car-side fa-2x me-3"></i>
+                            <h4 class="m-0">Licencia A1 y A2</h4>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                            <i class="fa fa-car-side fa-2x me-3"></i>
+                            <h4 class="m-0">Licencia A3</h4>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                            <i class="fa fa-car-side fa-2x me-3"></i>
+                            <h4 class="m-0">Licencia B</h4>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                            <i class="fa fa-car-side fa-2x me-3"></i>
+                            <h4 class="m-0">Licencia C</h4>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="tab-content w-100">
+                        <div class="tab-pane fade show active" id="tab-pane-1">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-1.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">15 Años Formando Conductores Responsables</h3>
+                                    <p class="mb-4"><strong>Licencia A1:</strong> Conduce taxis sin problemas. Requisitos: Tener al menos 20 años.</p>
+                                    <p class="mb-5"><strong>Licencia A2:</strong> Perfecta para taxis, ambulancias y transporte público de hasta 17 pasajeros, o hasta 32 asientos si tienes más de 2 años con esta licencia y el vehículo no supera los 9 metros de largo.</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Familiarízate con el formato real </p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Practicar reduce el estrés </p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Aprueba sin inconvenientes </p>
+                                    <a href="https://www.chileatiende.gob.cl/fichas/20592-licencias-de-conducir" class="btn btn-primary py-3 px-5 mt-3">Leer más<i class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-2">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-2.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">15 Años Formando Conductores Responsables</h3>
+                                    <p class="mb-4"><strong>Licencia A3:</strong> Ideal para taxis, transporte escolar, ambulancias y transporte público o privado de cualquier capacidad</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Dominas las normas del tráfico</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Sientete listo para manejar</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Conduce con mayor seguridad</p>
+                                    <a href="https://www.chileatiende.gob.cl/fichas/20592-licencias-de-conducir" class="btn btn-primary py-3 px-5 mt-3">Leer más<i class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-3">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-3.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">15 Años Formando Conductores Responsables</h3>
+                                    <p class="mb-4"><strong>Licencia clase B:</strong> Conduce vehículos motorizados de tres o cuatro ruedas para transporte particular de personas (hasta 9 asientos) o carga (peso vehicular hasta 3.500 kg). También puedes arrastrar un remolque cuyo peso no exceda al de la unidad motriz, y el peso total no supere los 3.500 kg. Ejemplos incluyen automóviles, camionetas, furgones y furgonetas.</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Conocimiento Actualizado </p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Detección de Áreas de Mejora </p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Creas una disciplina de estudio</p>
+                                    <a href="https://www.chileatiende.gob.cl/fichas/20592-licencias-de-conducir" class="btn btn-primary py-3 px-5 mt-3">Leer Más<i class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-4">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-4.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">15 Años Formando Conductores Responsables</h3>
+                                    <p class="mb-4"><strong>Licencia Clase C:</strong> Permite conducir vehículos de 2 o 3 ruedas con motor fijo o agregado, como motocicletas y motonetas.</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Practicar te prepara mejor para la vida real.</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Resultados instantáneos que te motivan a seguir mejorando</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Reduces eficazmente la probabilidad de tener que repetir el examen</p>
+                                    <a href="https://www.chileatiende.gob.cl/fichas/20592-licencias-de-conducir" class="btn btn-primary py-3 px-5 mt-3">Leer más<i class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- practicar para sacar tu prueba finaliazdo xd -->
+
+
+    <!-- el booking start xd -->
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <!-- el booking end xd -->
+
+
+    <!-- inicio de testimonio -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="text-primary text-uppercase">// Testimonios //</h6>
+                <h1 class="mb-5">¡Nuestros clientes!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item text-center">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">María Fernández</h5>
+                    <p>Dueña de Casa</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">¡PracticaTuPrueba.cl fue una experiencia increíble! Practicar los test en vivo como si fuera la prueba real y conocer los circuitos detalladamente me dio la confianza y seguridad que necesitaba. Es un recurso gratuito y potente que hizo posible mi sueño de obtener la licencia de conducir. ¡Mil gracias!</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Juan González</h5>
+                    <p>Estudiante de Conducción</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">¡Estoy eternamente agradecido con PracticaTuPrueba.cl! Gracias a los test en vivo y la oportunidad de familiarizarme con los circuitos de la prueba práctica, pude enfrentar el examen con mucha más seguridad. Este apoyo gratuito fue esencial para lograr mi licencia de conducir. ¡Un millón de gracias!</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Carla Pérez</h5>
+                    <p>Emprendedora</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">PracticaTuPrueba.cl fue un salvavidas para mí. Poder practicar los test en vivo y conocer los circuitos me permitió enfrentar la prueba práctica con una confianza inigualable. Es un apoyo gratuito y potente que recomiendo a todos los que quieren cumplir el sueño de obtener su licencia de conducir. ¡Gracias infinitas!</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Rodrigo Martínez</h5>
+                    <p>Empresario</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Gracias a PracticaTuPrueba.cl, pude prepararme de manera efectiva y segura. Los test en vivo y la información sobre los circuitos fueron fundamentales para sentirme tranquilo durante la prueba. Este recurso gratuito es un gran apoyo que hizo realidad mi sueño de obtener la licencia de conducir. ¡Estoy muy agradecido!</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-5.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Ana Rojas</h5>
+                    <p>Vendedora</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">¡Estoy más que satisfecha con PracticaTuPrueba.cl! Practicar los test en vivo y conocer los circuitos me preparó de manera excelente para la prueba práctica. Este apoyo gratuito y potente me ayudó a cumplir el sueño de tener mi licencia de conducir. ¡Mil gracias por todo!</p>
+                </div>
+            </div>
+            <div class="testimonial-item text-center">
+                <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-6.jpg" style="width: 80px; height: 80px;">
+                <h5 class="mb-0">Felipe Rojas</h5>
+                <p>Vendedor</p>
+                <div class="testimonial-text bg-light text-center p-4">
+                <p class="mb-0">¡PracticaTuPrueba.cl cambió mi vida! Mi preparación fue mucho más efectiva gracias a los test en vivo y la información sobre los circuitos de la prueba práctica. Este recurso gratuito es, sin duda, un gran apoyo que hizo posible que obtuviera mi licencia de conducir. ¡Muchas gracias por todo!</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+    <!-- final de testimonio -->
+
+
+    <!-- inicio de pie de página xd -->
+
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Dirección</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Región Metropolitana, Chile</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+56 9 3130 4910</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>soporte@practicatuprueba.cl</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Horario de Atención</h4>
+                    <h6 class="text-light">Lunes  a  Viernes:</h6>
+                    <p class="mb-4">09.00 AM - 09.00 PM</p>
+                    
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Practica</h4>
+                    <a class="btn btn-link" href="test-a1.html">Licencia A1</a>
+                    <a class="btn btn-link" href="test-a2.html">Licencia A2</a>
+                    <a class="btn btn-link" href="test-a3.html">Licencia A3</a>
+                    <a class="btn btn-link" href="test-b.html">Licencia B</a>
+                    <a class="btn btn-link" href="test-c.html">Licencia C</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Boletín informativo</h4>
+                    <p>Se el primero en enterarte de los nuevos contenidos y actualizaciones</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Ingresa tu correo">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Suscribirse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Practica Tu Prueba</a>, All Right Reserved.
+
+                        <!--/*** Fler Sain, Inc. trabajador de Eterlink Software Labs trae Practica Tu Prueba como https://www.practicatuprueba.cl/ El proveedor online de exámenes de conducir chileno  ***/-->
+                        Desarrollado por <a class="border-bottom" href="https://github.com/jonahuman">Flerr Sai, Inc.</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="index.html">Inicio</a>
+                            <a href="">Cookies</a>
+                            <a href="">Ayuda</a>
+                            <a href="">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin pie de página xd -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- librerías de javascript -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- librerías de javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
